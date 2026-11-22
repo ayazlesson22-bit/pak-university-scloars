@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daily Pakistan University Scholarship News — stay updated with the latest scholarship announcements from universities across Pakistan." />
+  <title>PK Scholarships — Pakistan University Scholarship News</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <span class="logo__icon">🎓</span>
+        <span class="logo__text">PK <strong>Scholarships</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#latest" class="nav__link">Latest</a></li>
+          <li><a href="#categories" class="nav__link">Categories</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Pakistan University<br />Scholarship News</h1>
+      <p class="hero__subtitle">Your one-stop source for the latest scholarship announcements from universities across Pakistan — updated daily.</p>
+      <a href="#latest" class="btn btn--primary">View Latest Scholarships</a>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats">
+    <div class="container stats__inner">
+      <div class="stat">
+        <span class="stat__number" id="stat-scholarships">0</span>
+        <span class="stat__label">Scholarships Posted</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">200+</span>
+        <span class="stat__label">Universities Tracked</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">Daily</span>
+        <span class="stat__label">Updates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST SCHOLARSHIPS (News Section — blank for now) ===== -->
+  <section class="section latest" id="latest">
+    <div class="container">
+      <h2 class="section__title">Latest Scholarships</h2>
+      <p class="section__subtitle">New scholarship announcements will appear here as they are published.</p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fully-funded">Fully Funded</button>
+        <button class="filter-btn" data-filter="partial">Partial</button>
+        <button class="filter-btn" data-filter="merit">Merit-Based</button>
+        <button class="filter-btn" data-filter="need">Need-Based</button>
+      </div>
+
+      <!-- Scholarship Cards Grid — empty for now -->
+      <div class="news-grid" id="news-grid">
+        <!-- Cards will be injected here by JS or manually -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="empty-state">
+        <div class="empty-state__icon">📭</div>
+        <h3>No Scholarships Yet</h3>
+        <p>New scholarship announcements will be posted here as soon as they become available. Check back soon!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section categories" id="categories">
+    <div class="container">
+      <h2 class="section__title">Browse by Category</h2>
+      <p class="section__subtitle">Find scholarships that match your profile.</p>
+
+      <div class="categories__grid">
+        <div class="category-card">
+          <div class="category-card__icon">🏛️</div>
+          <h3>Government</h3>
+          <p>HEC, provincial & federal government scholarships</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__icon">🏫</div>
+          <h3>University</h3>
+          <p>Internal university-funded merit & need-based awards</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__icon">🏢</div>
+          <h3>Private / NGO</h3>
+          <p>Scholarships from private organisations & foundations</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__icon">🌍</div>
+          <h3>International</h3>
+          <p>Foreign scholarships available to Pakistani students</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__icon">💻</div>
+          <h3>STEM</h3>
+          <p>Science, Technology, Engineering & Mathematics focused</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__icon">📚</div>
+          <h3>Undergraduate</h3>
+          <p>Scholarships specifically for bachelor's-level students</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__content">
+        <h2 class="section__title">About PK Scholarships</h2>
+        <p>We aggregate scholarship announcements from universities and organisations across Pakistan so you never miss an opportunity. Our goal is to make higher education accessible to every deserving student.</p>
+        <ul class="about__features">
+          <li>✅ Verified scholarship listings</li>
+          <li>✅ Direct links to official application portals</li>
+          <li>✅ Deadline reminders & alerts</li>
+          <li>✅ Covers all provinces & territories</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section newsletter">
+    <div class="container newsletter__inner">
+      <h2>Never Miss a Scholarship</h2>
+      <p>Subscribe to get daily email alerts for new scholarship announcements.</p>
+      <form class="newsletter__form" id="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p class="newsletter__note">We respect your privacy. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title">Contact Us</h2>
+      <p class="section__subtitle">Have a tip about a new scholarship? Want to collaborate? Reach out!</p>
+
+      <form class="contact__form" id="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon">🎓</span>
+        <span class="logo__text">PK <strong>Scholarships</strong></span>
+        <p>Daily Pakistan university scholarship news.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#latest">Latest</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.hec.gov.pk" target="_blank" rel="noopener">HEC Pakistan</a></li>
+          <li><a href="https://www.ehsaas.gov.pk" target="_blank" rel="noopener">Ehsaas Program</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> PK Scholarships. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
