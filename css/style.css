@@ -343,6 +343,19 @@ ul {
   color: #9d174d;
 }
 
+.scholarship-card__verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #0d6e3f;
+  background: #e8f5ee;
+  padding: 3px 10px;
+  border-radius: 50px;
+  border: 1px solid #c6ebd4;
+}
+
 .scholarship-card__title {
   font-size: 1.1rem;
   font-weight: 600;

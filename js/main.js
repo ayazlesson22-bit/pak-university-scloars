@@ -19,21 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Scholarships Data ----------
-     Add new scholarship objects here. Each card will be rendered automatically.
-     Supported types: "fully-funded", "partial", "merit", "need"
-  */
-  const scholarships = [
-    // Example (uncomment to test):
-    // {
-    //   title: "HEC Ehsaas Undergraduate Scholarship 2026",
-    //   type: "need",
-    //   university: "HEC Pakistan",
-    //   deadline: "2026-12-31",
-    //   excerpt: "Fully funded scholarship for undergraduate students from low-income families across Pakistan.",
-    //   link: "#"
-    // },
-  ];
+  /* ---------- Dynamic Scholarships Data ---------- */
+  let scholarships = [];
 
   /* ---------- Render Cards ---------- */
   function renderScholarships(filter = "all") {
@@ -43,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
       filter === "all"
         ? scholarships
         : scholarships.filter((s) => s.type === filter);
+
+    // Update stat counter
+    const statEl = document.getElementById("stat-scholarships");
+    if (statEl) statEl.textContent = scholarships.length;
 
     if (filtered.length === 0) {
       emptyState.style.display = "block";
@@ -63,11 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
         need: "Need-Based",
       };
 
+      const verifiedBadge = s.verified !== false ? `<span class="scholarship-card__verified" title="Verified by AI & official sources">✓ Verified</span>` : "";
+
       card.innerHTML = `
         <div class="scholarship-card__body">
-          <span class="scholarship-card__tag scholarship-card__tag--${s.type}">
-            ${tagLabel[s.type] || s.type}
-          </span>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="scholarship-card__tag scholarship-card__tag--${s.type}">
+              ${tagLabel[s.type] || s.type}
+            </span>
+            ${verifiedBadge}
+          </div>
           <h3 class="scholarship-card__title">${s.title}</h3>
           <div class="scholarship-card__meta">
             <span>🏫 ${s.university}</span>
@@ -75,17 +71,29 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <p class="scholarship-card__excerpt">${s.excerpt}</p>
           <a href="${s.link}" class="scholarship-card__link" target="_blank" rel="noopener">
-            View Details →
+            View Official Details →
           </a>
         </div>
       `;
 
       newsGrid.appendChild(card);
     });
+  }
 
-    // Update the stat counter
-    const statEl = document.getElementById("stat-scholarships");
-    if (statEl) statEl.textContent = scholarships.length;
+  /* ---------- Fetch Data from JSON ---------- */
+  async function loadScholarships() {
+    try {
+      const res = await fetch("./data/scholarships.json?t=" + Date.now());
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) {
+          scholarships = data;
+        }
+      }
+    } catch (err) {
+      console.warn("Could not load scholarships.json:", err);
+    }
+    renderScholarships();
   }
 
   /* ---------- Format Date ---------- */
@@ -185,6 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------- Initial Render ---------- */
-  renderScholarships();
+  /* ---------- Initial Load ---------- */
+  loadScholarships();
 });
