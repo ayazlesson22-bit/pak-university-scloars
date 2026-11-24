@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "PK Scholarships Bot"
           git config user.email "bot@pkscholarships.local"
-          git add data/scholarships.json
+          git add data/
           if git diff --staged --quiet; then
             echo "No new scholarships to commit. Everything is up to date."
           else

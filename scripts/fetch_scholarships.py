@@ -19,6 +19,7 @@ except ImportError:
     sys.exit(1)
 
 DATA_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "scholarships.json")
+DATA_JS_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "scholarships.js")
 MODELS = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-flash-latest"]
 VALID_TYPES = {"fully-funded", "partial", "merit", "need"}
 
@@ -35,11 +36,13 @@ def load_existing() -> List[Dict[str, Any]]:
         return []
 
 def save_scholarships(scholarships: List[Dict[str, Any]]) -> None:
-    """Saves scholarships back to the JSON database."""
+    """Saves scholarships back to JSON and JS database files."""
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(scholarships, f, indent=2, ensure_ascii=False)
-    print(f"Saved {len(scholarships)} scholarships to {DATA_FILE}")
+    with open(DATA_JS_FILE, "w", encoding="utf-8") as f:
+        f.write("window.PK_SCHOLARSHIPS_DATA = " + json.dumps(scholarships, indent=2, ensure_ascii=False) + ";\n")
+    print(f"Saved {len(scholarships)} scholarships to {DATA_FILE} and {DATA_JS_FILE}")
 
 def clean_json_response(raw_text: str) -> str:
     """Strips markdown code blocks from model output to parse pure JSON."""

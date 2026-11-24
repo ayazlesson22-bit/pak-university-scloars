@@ -16,7 +16,7 @@
   <!-- ===== HEADER / NAVBAR ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="/" class="logo">
+      <a href="#home" class="logo">
         <span class="logo__icon">🎓</span>
         <span class="logo__text">PK <strong>Scholarships</strong></span>
       </a>
@@ -64,11 +64,20 @@
     </div>
   </section>
 
-  <!-- ===== LATEST SCHOLARSHIPS (News Section — blank for now) ===== -->
+  <!-- ===== LATEST SCHOLARSHIPS SECTION ===== -->
   <section class="section latest" id="latest">
     <div class="container">
       <h2 class="section__title">Latest Scholarships</h2>
-      <p class="section__subtitle">New scholarship announcements will appear here as they are published.</p>
+      <p class="section__subtitle">Verified scholarship opportunities for students across universities in Pakistan.</p>
+
+      <!-- Search Box -->
+      <div class="search-container">
+        <div class="search-box">
+          <span class="search-box__icon">🔍</span>
+          <input type="text" id="scholarship-search" placeholder="Search by university, scholarship name, or keyword (e.g. NUST, HEC, LUMS, Master)..." aria-label="Search scholarships" />
+          <button type="button" id="search-clear" class="search-box__clear" aria-label="Clear search" style="display:none;">✕</button>
+        </div>
+      </div>
 
       <!-- Filter Bar -->
       <div class="filter-bar">
@@ -79,16 +88,21 @@
         <button class="filter-btn" data-filter="need">Need-Based</button>
       </div>
 
-      <!-- Scholarship Cards Grid — empty for now -->
+      <div class="filter-status" id="filter-status" style="display:none;">
+        <span id="filter-status-text"></span>
+        <button type="button" id="filter-reset-btn" class="filter-reset-link">Clear filters</button>
+      </div>
+
+      <!-- Scholarship Cards Grid -->
       <div class="news-grid" id="news-grid">
-        <!-- Cards will be injected here by JS or manually -->
+        <!-- Cards will be injected dynamically -->
       </div>
 
       <!-- Empty State -->
       <div class="empty-state" id="empty-state">
         <div class="empty-state__icon">📭</div>
-        <h3>No Scholarships Yet</h3>
-        <p>New scholarship announcements will be posted here as soon as they become available. Check back soon!</p>
+        <h3>No Scholarships Found</h3>
+        <p>No scholarships match your search criteria. Try a different search or clear the filter.</p>
       </div>
     </div>
   </section>
@@ -97,38 +111,44 @@
   <section class="section categories" id="categories">
     <div class="container">
       <h2 class="section__title">Browse by Category</h2>
-      <p class="section__subtitle">Find scholarships that match your profile.</p>
+      <p class="section__subtitle">Click any category to filter available scholarships.</p>
 
       <div class="categories__grid">
-        <div class="category-card">
+        <div class="category-card" data-category="Government" role="button" tabindex="0">
           <div class="category-card__icon">🏛️</div>
           <h3>Government</h3>
           <p>HEC, provincial & federal government scholarships</p>
+          <span class="category-card__link">Filter Government →</span>
         </div>
-        <div class="category-card">
+        <div class="category-card" data-category="University" role="button" tabindex="0">
           <div class="category-card__icon">🏫</div>
           <h3>University</h3>
           <p>Internal university-funded merit & need-based awards</p>
+          <span class="category-card__link">Filter University →</span>
         </div>
-        <div class="category-card">
+        <div class="category-card" data-category="Private / NGO" role="button" tabindex="0">
           <div class="category-card__icon">🏢</div>
           <h3>Private / NGO</h3>
           <p>Scholarships from private organisations & foundations</p>
+          <span class="category-card__link">Filter Private →</span>
         </div>
-        <div class="category-card">
+        <div class="category-card" data-category="International" role="button" tabindex="0">
           <div class="category-card__icon">🌍</div>
           <h3>International</h3>
           <p>Foreign scholarships available to Pakistani students</p>
+          <span class="category-card__link">Filter International →</span>
         </div>
-        <div class="category-card">
+        <div class="category-card" data-category="STEM" role="button" tabindex="0">
           <div class="category-card__icon">💻</div>
           <h3>STEM</h3>
           <p>Science, Technology, Engineering & Mathematics focused</p>
+          <span class="category-card__link">Filter STEM →</span>
         </div>
-        <div class="category-card">
+        <div class="category-card" data-category="Undergraduate" role="button" tabindex="0">
           <div class="category-card__icon">📚</div>
           <h3>Undergraduate</h3>
           <p>Scholarships specifically for bachelor's-level students</p>
+          <span class="category-card__link">Filter Undergraduate →</span>
         </div>
       </div>
     </div>
@@ -223,6 +243,8 @@
   <!-- ===== BACK TO TOP ===== -->
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
 
+  <!-- Data script loads fallback / bundled scholarships for local offline preview and file:// protocol -->
+  <script src="data/scholarships.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
