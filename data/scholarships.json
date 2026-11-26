@@ -1,5 +1,17 @@
 [
   {
+    "id": "higher-education-commission-hec-pakistan-tempus-public-foundation-hungary-stipendium-hungaricum-scholarship-program",
+    "title": "Stipendium Hungaricum Scholarship Program",
+    "university": "Higher Education Commission (HEC) Pakistan / Tempus Public Foundation Hungary",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-01-15",
+    "excerpt": "Open to Pakistani students for Bachelor's, One-Tier Master's, Master's, and Ph.D. programs at participating Hungarian higher education institutions. Benefits include full tuition waiver, monthly stipend, free dormitory accommodation, and medical insurance.",
+    "link": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/stipendium-hungaricum.aspx",
+    "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
     "id": "government-of-turkey-turkiye-burslari-scholarship-program",
     "title": "Turkiye Burslari Scholarship Program",
     "university": "Government of Turkey",
@@ -9,6 +21,18 @@
     "excerpt": "An internationally competitive scholarship open to Pakistani students for undergraduate, master's, and doctoral studies in Turkey. It includes university placement, monthly stipends, tuition fees, health insurance, and free Turkish language training.",
     "link": "https://turkiyeburslari.gov.tr/",
     "published_at": "2026-11-22",
+    "verified": true
+  },
+  {
+    "id": "higher-education-commission-hec-pakistan-china-scholarship-council-chinese-government-scholarship-csc-bilateral-program",
+    "title": "Chinese Government Scholarship (CSC) - Bilateral Program",
+    "university": "Higher Education Commission (HEC) Pakistan / China Scholarship Council",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-03-15",
+    "excerpt": "This prestigious scholarship is open to Pakistani nationals for undergraduate, master's, and doctoral studies in designated Chinese universities. It covers full tuition fees, accommodation, stipend, and comprehensive medical insurance.",
+    "link": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/China-Scholarship-Council.aspx",
+    "published_at": "2026-11-26",
     "verified": true
   },
   {
@@ -36,6 +60,18 @@
     "verified": true
   },
   {
+    "id": "ministry-of-education-culture-sports-science-and-technology-mext-japan-mext-research-student-scholarship-for-pakistan",
+    "title": "MEXT Research Student Scholarship for Pakistan",
+    "university": "Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-05-31",
+    "excerpt": "Offered to Pakistani nationals holding a 16-year or 18-year degree to pursue Master's or Ph.D. studies in Japan. It covers full tuition fees, round-trip airfare, and a generous monthly living allowance without any service obligation.",
+    "link": "https://www.pk.emb-japan.go.jp/itit_en/01_000001_00412.html",
+    "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
     "id": "government-of-punjab-peef-punjab-educational-endowment-fund-peef-master-level-scholarship",
     "title": "Punjab Educational Endowment Fund (PEEF) Master Level Scholarship",
     "university": "Government of Punjab / PEEF",
@@ -48,6 +84,18 @@
     "verified": true
   },
   {
+    "id": "fast-nuces-fast-nuces-financial-assistance-and-merit-scholarship",
+    "title": "FAST-NUCES Financial Assistance and Merit Scholarship",
+    "university": "FAST-NUCES",
+    "type": "partial",
+    "category": "University",
+    "deadline": "2027-07-10",
+    "excerpt": "Provides tuition fee waivers and financial relief to undergraduate students demonstrating strong academic merit or verified financial distress. The aid scales based on semester performance and family income assessments.",
+    "link": "https://www.nu.edu.pk/FinancialAssistance",
+    "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
     "id": "national-university-of-sciences-and-technology-nust-nust-need-based-financial-aid",
     "title": "NUST Need-Based Financial Aid",
     "university": "National University of Sciences and Technology (NUST)",
@@ -57,6 +105,42 @@
     "excerpt": "NUST offers internal financial assistance to undergraduate students who demonstrate genuine financial need alongside academic competence. Depending on the financial assessment, aid packages can cover partial to substantial portions of tuition fees.",
     "link": "https://nust.edu.pk/admissions/scholarships/",
     "published_at": "2026-11-22",
+    "verified": true
+  },
+  {
+    "id": "comsats-university-islamabad-comsats-university-islamabad-need-based-and-merit-scholarships",
+    "title": "COMSATS University Islamabad Need-Based and Merit Scholarships",
+    "university": "COMSATS University Islamabad",
+    "type": "need",
+    "category": "University",
+    "deadline": "2027-08-15",
+    "excerpt": "Aimed at supporting undergraduate and graduate students enrolled across various campuses who face economic hurdles. The program provides tuition fee concessions ranging from partial waivers to full coverage based on financial need.",
+    "link": "https://www.comsats.edu.pk/Scholarships/",
+    "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
+    "id": "german-academic-exchange-service-daad-daad-master-s-scholarships-for-development-related-postgraduate-courses-epos",
+    "title": "DAAD Master's Scholarships for Development-Related Postgraduate Courses (EPOS)",
+    "university": "German Academic Exchange Service (DAAD)",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-08-31",
+    "excerpt": "Designed for Pakistani graduates with at least two years of professional experience to pursue development-related postgraduate degrees in Germany. The grant includes monthly living allowances, travel subsidies, and health insurance.",
+    "link": "https://www2.daad.de/deutschland/stipendien/datenbank/en/21148-scholarship-database/?status=&origin=144&subjectGrps=&da=4&q=&page=1&detail=50076230",
+    "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
+    "id": "government-of-balochistan-balochistan-educational-endowment-fund-beef-scholarship",
+    "title": "Balochistan Educational Endowment Fund (BEEF) Scholarship",
+    "university": "Government of Balochistan",
+    "type": "merit",
+    "category": "Government",
+    "deadline": "2027-09-30",
+    "excerpt": "Targeted at deserving and bright students holding local/domicile status of Balochistan studying in recognized institutions across Pakistan. It covers academic expenses, tuition, and a living stipend for intermediate and university tiers.",
+    "link": "http://beef.gob.pk/",
+    "published_at": "2026-11-26",
     "verified": true
   },
   {
