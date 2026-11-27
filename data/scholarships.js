@@ -1,5 +1,17 @@
 window.PK_SCHOLARSHIPS_DATA = [
   {
+    "id": "quaid-i-azam-university-qau-islamabad-quaid-i-azam-university-merit-and-need-based-scholarships",
+    "title": "Quaid-i-Azam University Merit and Need-Based Scholarships",
+    "university": "Quaid-i-Azam University (QAU) Islamabad",
+    "type": "partial",
+    "category": "University",
+    "deadline": "2027-01-15",
+    "excerpt": "Offered to undergraduate and postgraduate students enrolled at QAU who demonstrate exceptional academic merit or financial vulnerability. The assistance includes partial to full tuition fee waivers and stipends funded through university endowment funds and HEC.",
+    "link": "https://qau.edu.pk/scholarships/",
+    "published_at": "2026-11-27",
+    "verified": true
+  },
+  {
     "id": "higher-education-commission-hec-pakistan-tempus-public-foundation-hungary-stipendium-hungaricum-scholarship-program",
     "title": "Stipendium Hungaricum Scholarship Program",
     "university": "Higher Education Commission (HEC) Pakistan / Tempus Public Foundation Hungary",
@@ -24,6 +36,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "verified": true
   },
   {
+    "id": "university-of-engineering-and-technology-uet-lahore-uet-lahore-merit-scholarship-scheme",
+    "title": "UET Lahore Merit Scholarship Scheme",
+    "university": "University of Engineering and Technology (UET) Lahore",
+    "type": "merit",
+    "category": "STEM",
+    "deadline": "2027-02-28",
+    "excerpt": "Targeted at high-achieving undergraduate engineering and technology students based on their entry test scores and semester GPAs. It provides semester tuition fee exemptions or substantial reductions to encourage academic excellence in technical fields.",
+    "link": "https://www.uet.edu.pk/financial-aid",
+    "published_at": "2026-11-27",
+    "verified": true
+  },
+  {
     "id": "higher-education-commission-hec-pakistan-china-scholarship-council-chinese-government-scholarship-csc-bilateral-program",
     "title": "Chinese Government Scholarship (CSC) - Bilateral Program",
     "university": "Higher Education Commission (HEC) Pakistan / China Scholarship Council",
@@ -36,6 +60,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "verified": true
   },
   {
+    "id": "aga-khan-university-aku-karachi-aga-khan-university-financial-assistance-program",
+    "title": "Aga Khan University Financial Assistance Program",
+    "university": "Aga Khan University (AKU) Karachi",
+    "type": "need",
+    "category": "Private/NGO",
+    "deadline": "2027-03-31",
+    "excerpt": "Offered to medical, nursing, and educational program applicants who are admitted on merit but unable to afford the tuition fees. The need-based aid covers up to 100% of tuition and associated educational expenses on a case-by-case assessment.",
+    "link": "https://www.aku.edu/admissions/financial-assistance",
+    "published_at": "2026-11-27",
+    "verified": true
+  },
+  {
     "id": "lahore-university-of-management-sciences-lums-lums-national-outreach-programme-nop-scholarship",
     "title": "LUMS National Outreach Programme (NOP) Scholarship",
     "university": "Lahore University of Management Sciences (LUMS)",
@@ -45,6 +81,30 @@ window.PK_SCHOLARSHIPS_DATA = [
     "excerpt": "The LUMS NOP provides full financial support to bright, underprivileged students from across Pakistan for undergraduate education. Scholars selected through this coaching and admission cycle receive 100% tuition fee waivers and living allowances.",
     "link": "https://admission.lums.edu.pk/national-outreach-programme-nop",
     "published_at": "2026-11-22",
+    "verified": true
+  },
+  {
+    "id": "government-of-sindh-sindh-educational-endowment-fund-seef-scholarship",
+    "title": "Sindh Educational Endowment Fund (SEEF) Scholarship",
+    "university": "Government of Sindh",
+    "type": "fully-funded",
+    "category": "Government",
+    "deadline": "2027-04-30",
+    "excerpt": "A provincial scholarship initiative for domicile holders of Sindh pursuing intermediate, undergraduate, and graduate studies in public and private sector institutions. It covers tuition costs and provides a living allowance for deserving and meritorious youth.",
+    "link": "https://seef.sindh.gov.pk/",
+    "published_at": "2026-11-27",
+    "verified": true
+  },
+  {
+    "id": "institute-of-business-administration-iba-karachi-iba-karachi-financial-assistance-national-talent-hunt-program",
+    "title": "IBA Karachi Financial Assistance & National Talent Hunt Program",
+    "university": "Institute of Business Administration (IBA) Karachi",
+    "type": "need",
+    "category": "University",
+    "deadline": "2027-05-15",
+    "excerpt": "Provides comprehensive financial support including tuition, accommodation, and maintenance allowances to talented undergraduate applicants from underprivileged regions of Pakistan. It ensures that financial constraints do not hinder admission to IBA's premier business and computer science programs.",
+    "link": "https://www.iba.edu.pk/financial-assistance.php",
+    "published_at": "2026-11-27",
     "verified": true
   },
   {
@@ -69,6 +129,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "excerpt": "Offered to Pakistani nationals holding a 16-year or 18-year degree to pursue Master's or Ph.D. studies in Japan. It covers full tuition fees, round-trip airfare, and a generous monthly living allowance without any service obligation.",
     "link": "https://www.pk.emb-japan.go.jp/itit_en/01_000001_00412.html",
     "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
+    "id": "higher-education-commission-hec-pakistan-hec-indigenous-ph-d-fellowship-for-5000-scholars",
+    "title": "HEC Indigenous Ph.D. Fellowship for 5000 Scholars",
+    "university": "Higher Education Commission (HEC) Pakistan",
+    "type": "fully-funded",
+    "category": "Government",
+    "deadline": "2027-06-30",
+    "excerpt": "Designed for Pakistani and AJK nationals holding MS, MPhil, or equivalent degrees to pursue Ph.D. studies in HEC-recognized local universities. It covers tuition fees, a monthly living stipend, and research grants to promote domestic research capacity.",
+    "link": "https://www.hec.gov.pk/english/scholarships/indigenous",
+    "published_at": "2026-11-27",
     "verified": true
   },
   {
