@@ -1,5 +1,17 @@
 window.PK_SCHOLARSHIPS_DATA = [
   {
+    "id": "european-commission-consortium-of-european-universities-erasmus-mundus-joint-masters-emjm-scholarships-for-pakistani-students",
+    "title": "Erasmus Mundus Joint Masters (EMJM) Scholarships for Pakistani Students",
+    "university": "European Commission (Consortium of European Universities)",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-01-15",
+    "excerpt": "A prestigious, fully-funded EU scholarship program open to Pakistani graduates holding a bachelor's degree to study across multiple European universities. The scholarship covers complete tuition fees, travel costs, establishment allowance, and a generous monthly living stipend for the duration of the master's program.",
+    "link": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+    "published_at": "2026-11-28",
+    "verified": true
+  },
+  {
     "id": "quaid-i-azam-university-qau-islamabad-quaid-i-azam-university-merit-and-need-based-scholarships",
     "title": "Quaid-i-Azam University Merit and Need-Based Scholarships",
     "university": "Quaid-i-Azam University (QAU) Islamabad",
@@ -60,6 +72,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "verified": true
   },
   {
+    "id": "university-of-the-punjab-lahore-university-of-the-punjab-merit-and-need-based-scholarships",
+    "title": "University of the Punjab Merit and Need-Based Scholarships",
+    "university": "University of the Punjab, Lahore",
+    "type": "merit",
+    "category": "University",
+    "deadline": "2027-03-31",
+    "excerpt": "Offered by Punjab University to enrolled undergraduate and graduate students who demonstrate exceptional academic excellence or severe financial need. The scheme provides tuition fee waivers, monthly stipends, and hostel fee concessions to facilitate continuous academic progression.",
+    "link": "https://pu.edu.pk/page/downloads/scholarships",
+    "published_at": "2026-11-28",
+    "verified": true
+  },
+  {
     "id": "aga-khan-university-aku-karachi-aga-khan-university-financial-assistance-program",
     "title": "Aga Khan University Financial Assistance Program",
     "university": "Aga Khan University (AKU) Karachi",
@@ -84,6 +108,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "verified": true
   },
   {
+    "id": "department-of-foreign-affairs-and-trade-dfat-government-of-australia-australia-awards-scholarships-aas-for-pakistan",
+    "title": "Australia Awards Scholarships (AAS) for Pakistan",
+    "university": "Department of Foreign Affairs and Trade (DFAT), Government of Australia",
+    "type": "fully-funded",
+    "category": "International",
+    "deadline": "2027-04-30",
+    "excerpt": "Long-term development-focused awards administered by the Australian Government for Pakistani professionals to undertake full-time postgraduate master's study at participating Australian universities. Coverage includes full tuition fees, return air travel, establishment allowance, contribution to living expenses, and overseas student health cover.",
+    "link": "https://www.dfat.gov.au/about-us/publications/australia-awards-pakistan-scholarship-policy",
+    "published_at": "2026-11-28",
+    "verified": true
+  },
+  {
     "id": "government-of-sindh-sindh-educational-endowment-fund-seef-scholarship",
     "title": "Sindh Educational Endowment Fund (SEEF) Scholarship",
     "university": "Government of Sindh",
@@ -93,6 +129,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "excerpt": "A provincial scholarship initiative for domicile holders of Sindh pursuing intermediate, undergraduate, and graduate studies in public and private sector institutions. It covers tuition costs and provides a living allowance for deserving and meritorious youth.",
     "link": "https://seef.sindh.gov.pk/",
     "published_at": "2026-11-27",
+    "verified": true
+  },
+  {
+    "id": "higher-education-commission-hec-pakistan-hec-overseas-scholarships-for-ms-mphil-and-phd-programs",
+    "title": "HEC Overseas Scholarships for MS/MPhil and PhD Programs",
+    "university": "Higher Education Commission (HEC) Pakistan",
+    "type": "fully-funded",
+    "category": "Government",
+    "deadline": "2027-05-15",
+    "excerpt": "A flagship national scholarship scheme designed for Pakistani and Azad Jammu & Kashmir nationals to pursue Master's and PhD studies at top-ranked international universities. It covers university tuition fees, living allowances, return airfare, and health insurance to build a high-level knowledge economy in Pakistan.",
+    "link": "https://www.hec.gov.pk/english/scholarships/Pages/default.aspx",
+    "published_at": "2026-11-28",
     "verified": true
   },
   {
@@ -129,6 +177,18 @@ window.PK_SCHOLARSHIPS_DATA = [
     "excerpt": "Offered to Pakistani nationals holding a 16-year or 18-year degree to pursue Master's or Ph.D. studies in Japan. It covers full tuition fees, round-trip airfare, and a generous monthly living allowance without any service obligation.",
     "link": "https://www.pk.emb-japan.go.jp/itit_en/01_000001_00412.html",
     "published_at": "2026-11-26",
+    "verified": true
+  },
+  {
+    "id": "government-of-khyber-pakhtunkhwa-higher-education-department-kpk-kpk-educational-endowment-fund-kpk-eef-scholarship",
+    "title": "KPK Educational Endowment Fund (KPK-EEF) Scholarship",
+    "university": "Government of Khyber Pakhtunkhwa / Higher Education Department KPK",
+    "type": "partial",
+    "category": "Government",
+    "deadline": "2027-06-30",
+    "excerpt": "The KPK-EEF scholarship provides financial assistance to meritorious and financially needy students domiciled in Khyber Pakhtunkhwa enrolled in top-ranked public sector universities and colleges. It covers tuition fees and academic expenses to ensure deserving youth can pursue higher education without financial barriers.",
+    "link": "https://eef.kp.gov.pk/",
+    "published_at": "2026-11-28",
     "verified": true
   },
   {
